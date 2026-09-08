@@ -5,7 +5,7 @@ Equipe: Raquel e Sarah Cristina
 ## 1. Coleta de lixo
 2) Uma pessoa pobre em um reino distante, para conseguir dinheiro, rouba um banco. Agora, após ter sido presa, precisa coletar todos os lixos de sua cidade para cumprir sua pena, caso contrário, ela volta para a cadeia!
 
-3) O objetivo do jogo é o personagem conseguir coletar todos os lixos da cidade a tempo. 
+3) O objetivo do jogo ( Que é top-down) é o personagem conseguir coletar todos os lixos da cidade a tempo. 
 
 4) O jogador poderá andar para frente, para trás, para a esquerda e para a direita.
 
