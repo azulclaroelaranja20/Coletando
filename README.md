@@ -1,4 +1,7 @@
 # Coletando
+
+Equipe: Raquel e Sarah Cristina
+
 ## 1. Coleta de lixo
 2) Uma pessoa pobre em um reino distante, para conseguir dinheiro, rouba um banco. Agora, após ter sido presa, precisa coletar todos os lixos de sua cidade para cumprir sua pena, caso contrário, ela volta para a cadeia!
 
@@ -6,7 +9,7 @@
 
 4) O jogador poderá andar para frente, para trás, para a esquerda e para a direita.
 
-5) Os obstáculos serão alguns labirintos que existirão pela cidade.
+5) Os obstáculos serão alguns labirintos que existirão pela cidade, além disso, haverá inimigos que ficarão andando de um lado para o outro, e o jogador precisará atirar neles secretamente para matá-los, alcançando assim os lixos. Se o jogador tocar nos inimigos, ele morre.
 
 6) O jogador poderá coletar os lixos que estão pela cidade, realizando esta ação após passar em cima deles.
 
