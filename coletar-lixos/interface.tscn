@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://cxa333nctupv7"]
+
+[ext_resource type="Texture2D" uid="uid://dcvtc302peoyc" path="res://interface.jpg" id="1_rh14k"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_pstle"]
+texture = ExtResource("1_rh14k")
+
+[node name="interface" type="Control" unique_id=1075129659]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Fundo" type="Panel" parent="." unique_id=1188797770]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_pstle")
+
+[node name="Título" type="Label" parent="." unique_id=822199322]
+layout_mode = 0
+offset_left = 401.0
+offset_top = 144.0
+offset_right = 720.0
+offset_bottom = 241.0
+text = "Coletando Lixos"
+
+[node name="Botões" type="VBoxContainer" parent="." unique_id=1000685834]
+layout_mode = 0
+offset_left = 364.0
+offset_top = 338.0
+offset_right = 803.0
+offset_bottom = 399.0
+
+[node name="jogar" type="Button" parent="Botões" unique_id=1125244536]
+layout_mode = 2
+
+[node name="sair" type="Button" parent="Botões" unique_id=1456277925]
+layout_mode = 2
