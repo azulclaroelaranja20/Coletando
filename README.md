@@ -20,5 +20,3 @@ Equipe: Raquel e Sarah Cristina
 9) Haverá um sistema de pontuações que contará cada um dos lixos que o jogador pegar e, identificará quando ele tiver pego todos eles e ganhado ou não.
 
 10) A estética do jogo será pixelart, inspirada em jogo cujas imagens foram passadas no projeto na primeira aula referente á este trabalho.
-
-

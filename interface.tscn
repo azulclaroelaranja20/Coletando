@@ -1,9 +1,66 @@
 [gd_scene format=3 uid="uid://cxa333nctupv7"]
 
 [ext_resource type="Texture2D" uid="uid://dcvtc302peoyc" path="res://interface.jpg" id="1_rh14k"]
+[ext_resource type="FontFile" uid="uid://cvs6epgv234aq" path="res://Super Bouncer.ttf" id="2_kyn48"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_pstle"]
 texture = ExtResource("1_rh14k")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tagv4"]
+bg_color = Color(0.5161328, 0.84140605, 0.658776, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(5.198121e-06, 0.65087926, 0.84367156, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_81h7y"]
+bg_color = Color(0.34765935, 0.6253465, 0.8608913, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.54320425, 0.8784774, 0.77997154, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_erfm4"]
+bg_color = Color(0.63309515, 0.61499065, 0.32293072, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.5176471, 0.84313726, 0.65882355, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fg4i7"]
+bg_color = Color(1.92523e-07, 0.67489064, 0.7628065, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.5176471, 0.84313726, 0.65882355, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k7ytc"]
+bg_color = Color(0.6688455, 0.6039804, 0.25044405, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.5176471, 0.84313726, 0.65882355, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f744q"]
+bg_color = Color(0.39574146, 0.59898007, 0.92921275, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.5176471, 0.84313726, 0.65882355, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0htyj"]
+bg_color = Color(0.7195617, 0.57521534, 0.32875043, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.5176471, 0.84313726, 0.65882355, 1)
 
 [node name="interface" type="Control" unique_id=1075129659]
 layout_mode = 3
@@ -24,10 +81,15 @@ theme_override_styles/panel = SubResource("StyleBoxTexture_pstle")
 
 [node name="Título" type="Label" parent="." unique_id=822199322]
 layout_mode = 0
-offset_left = 401.0
-offset_top = 144.0
-offset_right = 720.0
-offset_bottom = 241.0
+offset_left = 376.0
+offset_top = 167.0
+offset_right = 793.0
+offset_bottom = 235.0
+theme_override_colors/font_color = Color(0.33970556, 0.74448776, 0.7529152, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0.6313726, 0.8235294)
+theme_override_fonts/font = ExtResource("2_kyn48")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_tagv4")
 text = "Coletando Lixos"
 
 [node name="Botões" type="VBoxContainer" parent="." unique_id=1000685834]
@@ -39,6 +101,18 @@ offset_bottom = 399.0
 
 [node name="jogar" type="Button" parent="Botões" unique_id=1125244536]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_kyn48")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_81h7y")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_erfm4")
+theme_override_styles/hover = SubResource("StyleBoxFlat_fg4i7")
+text = "Jogar"
 
 [node name="sair" type="Button" parent="Botões" unique_id=1456277925]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_kyn48")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_k7ytc")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_f744q")
+theme_override_styles/hover = SubResource("StyleBoxFlat_0htyj")
+text = "Sair"
