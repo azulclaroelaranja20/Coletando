@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://cxa333nctupv7"]
 
+[ext_resource type="Script" uid="uid://dpt2c1ew3nptf" path="res://interface.gd" id="1_4rbkc"]
 [ext_resource type="Texture2D" uid="uid://dcvtc302peoyc" path="res://interface.jpg" id="1_rh14k"]
 [ext_resource type="FontFile" uid="uid://cvs6epgv234aq" path="res://Super Bouncer.ttf" id="2_kyn48"]
 [ext_resource type="Texture2D" uid="uid://5v28d4lxmga8" path="res://enfeito.jpg" id="3_oi7g3"]
@@ -70,6 +71,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_4rbkc")
 
 [node name="Fundo" type="Panel" parent="." unique_id=1188797770]
 layout_mode = 1
@@ -98,10 +100,11 @@ text = "Coletando Lixos"
 [node name="Botões" type="VBoxContainer" parent="." unique_id=1000685834]
 layout_mode = 0
 offset_left = 462.0
-offset_top = 376.0
+offset_top = 357.0
 offset_right = 853.3334
-offset_bottom = 463.3333
+offset_bottom = 463.0
 scale = Vector2(1.5, 1.5)
+theme_override_constants/separation = 12
 
 [node name="jogar" type="Button" parent="Botões" unique_id=1125244536]
 texture_filter = 1
@@ -128,3 +131,6 @@ position = Vector2(258.9487, 459.6923)
 rotation = -0.12391838
 scale = Vector2(0.20354809, 0.20962957)
 texture = ExtResource("3_oi7g3")
+
+[connection signal="pressed" from="Botões/jogar" to="." method="_on_jogar_pressed"]
+[connection signal="pressed" from="Botões/sair" to="." method="_on_sair_pressed"]
