@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://dcvtc302peoyc" path="res://interface.jpg" id="1_rh14k"]
 [ext_resource type="FontFile" uid="uid://cvs6epgv234aq" path="res://Super Bouncer.ttf" id="2_kyn48"]
+[ext_resource type="Texture2D" uid="uid://5v28d4lxmga8" path="res://enfeito.jpg" id="3_oi7g3"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_pstle"]
 texture = ExtResource("1_rh14k")
@@ -23,7 +24,7 @@ border_width_bottom = 3
 border_color = Color(0.54320425, 0.8784774, 0.77997154, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_erfm4"]
-bg_color = Color(0.63309515, 0.61499065, 0.32293072, 1)
+bg_color = Color(0.09628414, 0.6961699, 0.5903811, 1)
 border_width_left = 3
 border_width_top = 3
 border_width_right = 3
@@ -47,7 +48,7 @@ border_width_bottom = 3
 border_color = Color(0.5176471, 0.84313726, 0.65882355, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f744q"]
-bg_color = Color(0.39574146, 0.59898007, 0.92921275, 1)
+bg_color = Color(0.7967225, 0.52447695, 0.4124182, 1)
 border_width_left = 3
 border_width_top = 3
 border_width_right = 3
@@ -80,11 +81,13 @@ grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_pstle")
 
 [node name="Título" type="Label" parent="." unique_id=822199322]
+texture_filter = 1
 layout_mode = 0
-offset_left = 376.0
-offset_top = 167.0
-offset_right = 793.0
-offset_bottom = 235.0
+offset_left = 143.0
+offset_top = 104.0
+offset_right = 574.0
+offset_bottom = 182.0
+scale = Vector2(2, 2)
 theme_override_colors/font_color = Color(0.33970556, 0.74448776, 0.7529152, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0.6313726, 0.8235294)
 theme_override_fonts/font = ExtResource("2_kyn48")
@@ -94,12 +97,14 @@ text = "Coletando Lixos"
 
 [node name="Botões" type="VBoxContainer" parent="." unique_id=1000685834]
 layout_mode = 0
-offset_left = 364.0
-offset_top = 338.0
-offset_right = 803.0
-offset_bottom = 399.0
+offset_left = 462.0
+offset_top = 376.0
+offset_right = 853.3334
+offset_bottom = 463.3333
+scale = Vector2(1.5, 1.5)
 
 [node name="jogar" type="Button" parent="Botões" unique_id=1125244536]
+texture_filter = 1
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_kyn48")
 theme_override_font_sizes/font_size = 30
@@ -109,6 +114,7 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_fg4i7")
 text = "Jogar"
 
 [node name="sair" type="Button" parent="Botões" unique_id=1456277925]
+texture_filter = 1
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_kyn48")
 theme_override_font_sizes/font_size = 30
@@ -116,3 +122,9 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_k7ytc")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_f744q")
 theme_override_styles/hover = SubResource("StyleBoxFlat_0htyj")
 text = "Sair"
+
+[node name="enfeite" type="Sprite2D" parent="." unique_id=1320667080]
+position = Vector2(258.9487, 459.6923)
+rotation = -0.12391838
+scale = Vector2(0.20354809, 0.20962957)
+texture = ExtResource("3_oi7g3")
