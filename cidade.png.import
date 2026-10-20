@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dcvtc302peoyc"
-path="res://.godot/imported/interface.jpg-6475116f98ba5f645f9a6e343fe921b8.ctex"
+uid="uid://c564ipf021tsi"
+path="res://.godot/imported/cidade.png-3c07d0b28103459974aeaf1979b31cc7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://interface.jpg"
-dest_files=["res://.godot/imported/interface.jpg-6475116f98ba5f645f9a6e343fe921b8.ctex"]
+source_file="res://cidade.png"
+dest_files=["res://.godot/imported/cidade.png-3c07d0b28103459974aeaf1979b31cc7.ctex"]
 
 [params]
 
