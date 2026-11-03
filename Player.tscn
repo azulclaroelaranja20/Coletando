@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://bxwcfds2boai5"]
+
+[ext_resource type="Texture2D" uid="uid://bmgkwann41nsh" path="res://Gemini_Generated_Image_s20f5fs20f5fs20f.jpg" id="1_xhfnw"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kpjcp"]
+atlas = ExtResource("1_xhfnw")
+region = Rect2(0, 0, 341, 341)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kne1u"]
+atlas = ExtResource("1_xhfnw")
+region = Rect2(341, 0, 341, 341)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e80uo"]
+atlas = ExtResource("1_xhfnw")
+region = Rect2(682, 0, 341, 341)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ke4a7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kpjcp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kne1u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e80uo")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[node name="Player" type="CharacterBody2D" unique_id=1068895964]
+
+[node name="Corpo" type="CollisionShape2D" parent="." unique_id=317198140]
+
+[node name="Imagem" type="AnimatedSprite2D" parent="." unique_id=218700862]
+position = Vector2(175, 93.5)
+scale = Vector2(0.5161291, 0.46627563)
+sprite_frames = SubResource("SpriteFrames_ke4a7")
+animation = &"idle"
