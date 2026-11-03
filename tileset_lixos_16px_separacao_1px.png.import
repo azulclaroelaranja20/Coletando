@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c564ipf021tsi"
-path="res://.godot/imported/cidade.png-3c07d0b28103459974aeaf1979b31cc7.ctex"
+uid="uid://c1ii1wlxspf7o"
+path="res://.godot/imported/tileset_lixos_16px_separacao_1px.png-371447bd01ff065c53b49f6b06232261.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://cidade.png"
-dest_files=["res://.godot/imported/cidade.png-3c07d0b28103459974aeaf1979b31cc7.ctex"]
+source_file="res://tileset_lixos_16px_separacao_1px.png"
+dest_files=["res://.godot/imported/tileset_lixos_16px_separacao_1px.png-371447bd01ff065c53b49f6b06232261.ctex"]
 
 [params]
 
