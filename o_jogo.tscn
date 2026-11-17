@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://opxkqqx27b1o" path="res://tilemap.png" id="1_sqbau"]
 [ext_resource type="Texture2D" uid="uid://c1ii1wlxspf7o" path="res://tileset_lixos_16px_separacao_1px.png" id="2_k84ej"]
+[ext_resource type="PackedScene" uid="uid://bxwcfds2boai5" path="res://Player.tscn" id="3_2jibk"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k84ej"]
 texture = ExtResource("1_sqbau")
@@ -442,3 +443,7 @@ tile_set = SubResource("TileSet_k1p63")
 [node name="lixos" type="TileMapLayer" parent="mundo" unique_id=1511827984]
 tile_map_data = PackedByteArray("AAAKAAkAAAAEAAEAAAAaAAoAAAAEAAEAAAADAA8AAAACAAEAAAAiAAUAAAACAAEAAAASAAwAAAAHAAEAAAAkAAoAAAAHAAEAAAAkAAwAAAAHAAEAAAAKABAAAAAAAAAAAAAMAAEAAAAAAAAAAAABAAoAAAAEAAAAAAAlABAAAAAFAAAAAAAkAAEAAAAFAAAAAAAcAAQAAAAFAAAAAAAVAAYAAAAGAAEAAAA=")
 tile_set = SubResource("TileSet_sqbau")
+
+[node name="Player" parent="." unique_id=1068895964 instance=ExtResource("3_2jibk")]
+position = Vector2(39.000004, 39.000004)
+scale = Vector2(0.35, 0.35)

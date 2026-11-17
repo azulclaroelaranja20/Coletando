@@ -28,3 +28,4 @@ func _physics_process(delta: float) -> void:
 		$Imagem.play("frente")
 	elif velocity.y == 1:
 		$Imagem.play("trás")
+	move_and_slide()
