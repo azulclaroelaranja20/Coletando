@@ -163,7 +163,7 @@ shape = SubResource("RectangleShape2D_itxgx")
 [node name="Imagem" type="AnimatedSprite2D" parent="."]
 scale = Vector2(1, 0.898)
 sprite_frames = SubResource("SpriteFrames_4rbkc")
-animation = &"frente"
+animation = &"direita"
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(0, 1)
