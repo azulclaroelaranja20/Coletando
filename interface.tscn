@@ -735,11 +735,11 @@ text = "Coletando Lixos"
 
 [node name="Botões" type="VBoxContainer" parent="."]
 layout_mode = 0
-offset_left = 76.0
-offset_top = 45.0
-offset_right = 247.333
-offset_bottom = 139.0
-scale = Vector2(1.5, 1.5)
+offset_left = 148.0
+offset_top = 88.0
+offset_right = 334.0
+offset_bottom = 182.0
+scale = Vector2(0.5, 0.5)
 theme_override_constants/separation = 12
 
 [node name="jogar" type="Button" parent="Botões"]
@@ -763,7 +763,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_k7ytc")
 text = "Sair"
 
 [node name="enfeite" type="Sprite2D" parent="."]
-position = Vector2(96, 118)
+position = Vector2(105, 109)
 rotation = -0.123918
 scale = Vector2(0.05, 0.052)
 texture = ExtResource("3_oi7g3")

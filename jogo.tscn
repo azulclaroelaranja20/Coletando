@@ -1,6 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://x07aerwgckbj"]
+[gd_scene load_steps=2 format=3 uid="uid://dnghrwh0o8pa0"]
 
-[ext_resource type="PackedScene" uid="uid://c1isf45k6tuuf" path="res://character_body_2d.tscn" id="1_kxg5b"]
+[ext_resource type="PackedScene" uid="uid://bncm1kxoxm1c5" path="res://character_body_2d.tscn" id="1_kxg5b"]
 
 [node name="jogo" type="Node2D"]
 

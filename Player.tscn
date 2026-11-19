@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://bxwcfds2boai5"]
+[gd_scene load_steps=22 format=3 uid="uid://bxwcfds2boai5"]
 
 [ext_resource type="Script" uid="uid://dnv7ascb1apxh" path="res://player.gd" id="1_kpjcp"]
 [ext_resource type="Texture2D" uid="uid://bq4q53m0xto5b" path="res://sim,opersonagem-Photoroom.png" id="1_xhfnw"]
@@ -89,7 +89,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_cxr5p")
 }],
-"loop": 1,
+"loop": true,
 "name": &"direita",
 "speed": 5.0
 }, {
@@ -106,7 +106,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_wi0c6")
 }],
-"loop": 1,
+"loop": true,
 "name": &"esquerda",
 "speed": 5.0
 }, {
@@ -123,7 +123,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_oudfo")
 }],
-"loop": 1,
+"loop": true,
 "name": &"frente",
 "speed": 5.0
 }, {
@@ -131,7 +131,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_d6rpx")
 }],
-"loop": 1,
+"loop": true,
 "name": &"parado",
 "speed": 5.0
 }, {
@@ -148,23 +148,32 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_efikj")
 }],
-"loop": 1,
+"loop": true,
 "name": &"trás",
 "speed": 5.0
 }]
 
-[node name="Player" type="CharacterBody2D" unique_id=1068895964]
+[node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_kpjcp")
 
-[node name="Corpo" type="CollisionShape2D" parent="." unique_id=317198140]
+[node name="Corpo" type="CollisionShape2D" parent="."]
 position = Vector2(0.5, 2.5)
 shape = SubResource("RectangleShape2D_itxgx")
 
-[node name="Imagem" type="AnimatedSprite2D" parent="." unique_id=218700862]
+[node name="Imagem" type="AnimatedSprite2D" parent="."]
 scale = Vector2(1, 0.898)
 sprite_frames = SubResource("SpriteFrames_4rbkc")
-animation = &"direita"
-autoplay = "frente"
+animation = &"frente"
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=250281578]
+[node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(0, 1)
+
+[node name="Label" type="Label" parent="."]
+visible = false
+offset_left = -105.0
+offset_top = -28.0
+offset_right = 117.0
+offset_bottom = 31.0
+theme_override_font_sizes/font_size = 20
+text = "              Vitória!
+Parabéns você acabou!"

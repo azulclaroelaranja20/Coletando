@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://3o3dhdyc72ru"]
+
+[ext_resource type="Texture2D" uid="uid://de40fs6a000f6" path="res://professora (1).png" id="1_ilafw"]
+
+[sub_resource type="Theme" id="Theme_7flbs"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_alf7g"]
+texture = ExtResource("1_ilafw")
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_7flbs")
+theme_override_styles/panel = SubResource("StyleBoxTexture_alf7g")
