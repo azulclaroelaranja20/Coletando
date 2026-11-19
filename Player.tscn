@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://bxwcfds2boai5"]
+[gd_scene load_steps=6 format=3 uid="uid://bxwcfds2boai5"]
 
 [ext_resource type="Texture2D" uid="uid://bmgkwann41nsh" path="res://Gemini_Generated_Image_s20f5fs20f5fs20f.jpg" id="1_xhfnw"]
 
@@ -26,17 +26,17 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_e80uo")
 }],
-"loop": 1,
+"loop": true,
 "name": &"idle",
 "speed": 5.0
 }]
 
-[node name="Player" type="CharacterBody2D" unique_id=1068895964]
+[node name="Player" type="CharacterBody2D"]
 
-[node name="Corpo" type="CollisionShape2D" parent="." unique_id=317198140]
+[node name="Corpo" type="CollisionShape2D" parent="."]
 
-[node name="Imagem" type="AnimatedSprite2D" parent="." unique_id=218700862]
+[node name="Imagem" type="AnimatedSprite2D" parent="."]
 position = Vector2(175, 93.5)
-scale = Vector2(0.5161291, 0.46627563)
+scale = Vector2(0.516129, 0.466276)
 sprite_frames = SubResource("SpriteFrames_ke4a7")
 animation = &"idle"
