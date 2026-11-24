@@ -1,4 +1,4 @@
-[gd_scene load_steps=103 format=3 uid="uid://cxa333nctupv7"]
+[gd_scene format=3 uid="uid://cxa333nctupv7"]
 
 [ext_resource type="Script" uid="uid://dpt2c1ew3nptf" path="res://interface.gd" id="1_4rbkc"]
 [ext_resource type="Texture2D" uid="uid://d00r4mh5b71qx" path="res://spritedofundo.png" id="2_4rbkc"]
@@ -638,7 +638,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_k1sf4")
 }],
-"loop": true,
+"loop": 1,
 "name": &"default",
 "speed": 5.0
 }]
@@ -651,13 +651,13 @@ border_width_right = 5
 border_width_bottom = 5
 border_color = Color(5.19812e-06, 0.650879, 0.843672, 1)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fg4i7"]
-bg_color = Color(1.92523e-07, 0.674891, 0.762806, 1)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_81h7y"]
+bg_color = Color(0.347659, 0.625346, 0.860891, 1)
 border_width_left = 3
 border_width_top = 3
 border_width_right = 3
 border_width_bottom = 3
-border_color = Color(0.517647, 0.843137, 0.658824, 1)
+border_color = Color(0.543204, 0.878477, 0.779972, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_erfm4"]
 bg_color = Color(0.0962841, 0.69617, 0.590381, 1)
@@ -667,24 +667,8 @@ border_width_right = 3
 border_width_bottom = 3
 border_color = Color(0.517647, 0.843137, 0.658824, 1)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_81h7y"]
-bg_color = Color(0.347659, 0.625346, 0.860891, 1)
-border_width_left = 3
-border_width_top = 3
-border_width_right = 3
-border_width_bottom = 3
-border_color = Color(0.543204, 0.878477, 0.779972, 1)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0htyj"]
-bg_color = Color(0.719562, 0.575215, 0.32875, 1)
-border_width_left = 3
-border_width_top = 3
-border_width_right = 3
-border_width_bottom = 3
-border_color = Color(0.517647, 0.843137, 0.658824, 1)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f744q"]
-bg_color = Color(0.796722, 0.524477, 0.412418, 1)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fg4i7"]
+bg_color = Color(1.92523e-07, 0.674891, 0.762806, 1)
 border_width_left = 3
 border_width_top = 3
 border_width_right = 3
@@ -699,7 +683,23 @@ border_width_right = 3
 border_width_bottom = 3
 border_color = Color(0.517647, 0.843137, 0.658824, 1)
 
-[node name="interface" type="Control"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f744q"]
+bg_color = Color(0.796722, 0.524477, 0.412418, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.517647, 0.843137, 0.658824, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0htyj"]
+bg_color = Color(0.719562, 0.575215, 0.32875, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.517647, 0.843137, 0.658824, 1)
+
+[node name="interface" type="Control" unique_id=839985471]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -708,7 +708,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_4rbkc")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=532544495]
 texture_filter = 1
 texture_repeat = 2
 position = Vector2(159.5, 91.5)
@@ -717,7 +717,7 @@ sprite_frames = SubResource("SpriteFrames_pstle")
 autoplay = "default"
 frame_progress = 0.779068
 
-[node name="Título" type="Label" parent="."]
+[node name="Título" type="Label" parent="." unique_id=376659534]
 texture_filter = 1
 layout_mode = 0
 offset_left = 69.0
@@ -733,7 +733,7 @@ theme_override_font_sizes/font_size = 60
 theme_override_styles/normal = SubResource("StyleBoxFlat_tagv4")
 text = "Coletando Lixos"
 
-[node name="Botões" type="VBoxContainer" parent="."]
+[node name="Botões" type="VBoxContainer" parent="." unique_id=1640207027]
 layout_mode = 0
 offset_left = 148.0
 offset_top = 88.0
@@ -742,27 +742,42 @@ offset_bottom = 182.0
 scale = Vector2(0.5, 0.5)
 theme_override_constants/separation = 12
 
-[node name="jogar" type="Button" parent="Botões"]
+[node name="jogar" type="Button" parent="Botões" unique_id=2008079943]
 texture_filter = 1
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_kyn48")
 theme_override_font_sizes/font_size = 30
-theme_override_styles/hover = SubResource("StyleBoxFlat_fg4i7")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_erfm4")
 theme_override_styles/normal = SubResource("StyleBoxFlat_81h7y")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_erfm4")
+theme_override_styles/hover = SubResource("StyleBoxFlat_fg4i7")
 text = "Jogar"
 
-[node name="sair" type="Button" parent="Botões"]
+[node name="sair" type="Button" parent="Botões" unique_id=525981520]
 texture_filter = 1
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_kyn48")
 theme_override_font_sizes/font_size = 30
-theme_override_styles/hover = SubResource("StyleBoxFlat_0htyj")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_f744q")
 theme_override_styles/normal = SubResource("StyleBoxFlat_k7ytc")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_f744q")
+theme_override_styles/hover = SubResource("StyleBoxFlat_0htyj")
 text = "Sair"
 
-[node name="enfeite" type="Sprite2D" parent="."]
+[node name="créditos" type="Button" parent="Botões" unique_id=469383817]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.5654103, 0.9549355, 0.9377778, 1)
+theme_override_colors/font_focus_color = Color(0.9254895, 0.9877462, 0.68833244, 1)
+theme_override_colors/font_pressed_color = Color(0.83862746, 0.67983687, 0.8863566, 1)
+theme_override_colors/font_hover_color = Color(0.92779297, 1, 0.5105533, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.82190466, 0.41720286, 0.75041395, 1)
+theme_override_colors/icon_normal_color = Color(0.65304786, 0.5014036, 0.941541, 1)
+theme_override_colors/icon_focus_color = Color(0.23203495, 0.73394334, 0.5499016, 1)
+theme_override_colors/icon_pressed_color = Color(0.58431375, 0.5921569, 0.3372549, 0.8156863)
+theme_override_colors/icon_hover_color = Color(0.7595943, 0.4210354, 0.5604831, 1)
+theme_override_fonts/font = ExtResource("2_kyn48")
+theme_override_font_sizes/font_size = 30
+text = "Créditos"
+
+[node name="enfeite" type="Sprite2D" parent="." unique_id=730329607]
 position = Vector2(105, 109)
 rotation = -0.123918
 scale = Vector2(0.05, 0.052)
@@ -770,3 +785,4 @@ texture = ExtResource("3_oi7g3")
 
 [connection signal="pressed" from="Botões/jogar" to="." method="_on_jogar_pressed"]
 [connection signal="pressed" from="Botões/sair" to="." method="_on_sair_pressed"]
+[connection signal="pressed" from="Botões/créditos" to="." method="_on_créditos_pressed"]

@@ -1,7 +1,8 @@
-[gd_scene load_steps=22 format=3 uid="uid://bxwcfds2boai5"]
+[gd_scene format=3 uid="uid://bxwcfds2boai5"]
 
 [ext_resource type="Script" uid="uid://dnv7ascb1apxh" path="res://player.gd" id="1_kpjcp"]
 [ext_resource type="Texture2D" uid="uid://bq4q53m0xto5b" path="res://sim,opersonagem-Photoroom.png" id="1_xhfnw"]
+[ext_resource type="FontFile" uid="uid://by6ffhr2wgfh" path="res://Philanthropy.ttf" id="3_kne1u"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_itxgx"]
 size = Vector2(65, 59)
@@ -89,7 +90,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_cxr5p")
 }],
-"loop": true,
+"loop": 1,
 "name": &"direita",
 "speed": 5.0
 }, {
@@ -106,7 +107,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_wi0c6")
 }],
-"loop": true,
+"loop": 1,
 "name": &"esquerda",
 "speed": 5.0
 }, {
@@ -123,7 +124,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_oudfo")
 }],
-"loop": true,
+"loop": 1,
 "name": &"frente",
 "speed": 5.0
 }, {
@@ -131,7 +132,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_d6rpx")
 }],
-"loop": true,
+"loop": 1,
 "name": &"parado",
 "speed": 5.0
 }, {
@@ -148,32 +149,33 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_efikj")
 }],
-"loop": true,
+"loop": 1,
 "name": &"trás",
 "speed": 5.0
 }]
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" unique_id=1774487712]
 script = ExtResource("1_kpjcp")
 
-[node name="Corpo" type="CollisionShape2D" parent="."]
+[node name="Corpo" type="CollisionShape2D" parent="." unique_id=1104954014]
 position = Vector2(0.5, 2.5)
 shape = SubResource("RectangleShape2D_itxgx")
 
-[node name="Imagem" type="AnimatedSprite2D" parent="."]
+[node name="Imagem" type="AnimatedSprite2D" parent="." unique_id=2096792200]
 scale = Vector2(1, 0.898)
 sprite_frames = SubResource("SpriteFrames_4rbkc")
 animation = &"direita"
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1079604082]
 position = Vector2(0, 1)
 
-[node name="Label" type="Label" parent="."]
+[node name="Label" type="Label" parent="." unique_id=638604093]
 visible = false
 offset_left = -105.0
 offset_top = -28.0
 offset_right = 117.0
 offset_bottom = 31.0
-theme_override_font_sizes/font_size = 20
+theme_override_fonts/font = ExtResource("3_kne1u")
+theme_override_font_sizes/font_size = 35
 text = "              Vitória!
 Parabéns você acabou!"

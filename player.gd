@@ -28,7 +28,7 @@ func _physics_process(delta: float) -> void:
 		var colisao = get_slide_collision(i)
 		var objeto = colisao.get_collider()
 		
-		if objeto.is_in_group("lixos"):
+		if objeto.is_in_group("componentes"):
 			lixos_coletados += 1
 			print("Lixos coletados pelo player: ", lixos_coletados)
 			# Avisa a cena principal para atualizar o texto do HUD

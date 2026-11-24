@@ -4,6 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://opxkqqx27b1o" path="res://tilemap.png" id="1_sqbau"]
 [ext_resource type="PackedScene" uid="uid://bxwcfds2boai5" path="res://Player.tscn" id="3_2jibk"]
 [ext_resource type="PackedScene" uid="uid://bam4mfe62jaxn" path="res://node_2d.tscn" id="4_q2eyk"]
+[ext_resource type="FontFile" uid="uid://cvs6epgv234aq" path="res://Super Bouncer.ttf" id="5_bo4iu"]
+[ext_resource type="FontFile" uid="uid://cl36wxrhbpkc4" path="res://Super Kidboys.ttf" id="6_uix7o"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k84ej"]
 texture = ExtResource("1_sqbau")
@@ -370,10 +372,6 @@ scale = Vector2(0.35, 0.35)
 position = Vector2(69, 40)
 scale = Vector2(0.35, 0.35)
 
-[node name="Node2D6" parent="." unique_id=1485200916 instance=ExtResource("4_q2eyk")]
-position = Vector2(61, 250)
-scale = Vector2(0.3, 0.3)
-
 [node name="Node2D2" parent="." unique_id=763372217 instance=ExtResource("4_q2eyk")]
 position = Vector2(486, 57)
 scale = Vector2(0.35, 0.35)
@@ -393,17 +391,19 @@ scale = Vector2(0.35, 0.35)
 [node name="HUD" type="CanvasLayer" parent="." unique_id=1626637771]
 
 [node name="PanelContainer" type="PanelContainer" parent="HUD" unique_id=1125860599]
-offset_right = 40.0
-offset_bottom = 40.0
+offset_right = 84.0
+offset_bottom = 23.0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="HUD/PanelContainer" unique_id=1756778766]
 layout_mode = 2
 
 [node name="Tempo" type="Label" parent="HUD/PanelContainer/HBoxContainer" unique_id=1915572445]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("5_bo4iu")
 
 [node name="Lixos" type="Label" parent="HUD/PanelContainer/HBoxContainer" unique_id=390570648]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("5_bo4iu")
 
 [node name="Mensagem" type="Label" parent="HUD" unique_id=115455074]
 visible = false
@@ -418,10 +418,43 @@ offset_right = 66.5
 offset_bottom = 24.5
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_fonts/font = ExtResource("6_uix7o")
 text = "Tempo Esgotado!
-    Você perdeu!"
+    Você perdeu!
+
+sair: x
+menu: y
+créditos: z"
 
 [node name="Timer" type="Timer" parent="." unique_id=2135413238]
 wait_time = 60.0
 one_shot = true
 autostart = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=2136158805]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = 163.0
+offset_top = 2.0
+offset_right = 367.0
+offset_bottom = 22.0
+grow_horizontal = 0
+
+[node name="sair" type="Label" parent="HBoxContainer" unique_id=630870934]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_uix7o")
+theme_override_font_sizes/font_size = 10
+text = "sair: \"x\""
+
+[node name="menu" type="Label" parent="HBoxContainer" unique_id=323591434]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_uix7o")
+theme_override_font_sizes/font_size = 10
+text = "menu: \"y\""
+
+[node name="créditos" type="Label" parent="HBoxContainer" unique_id=1773695979]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_uix7o")
+theme_override_font_sizes/font_size = 10
+text = "créditos:\"z\""
