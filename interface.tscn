@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://d00r4mh5b71qx" path="res://spritedofundo.png" id="2_4rbkc"]
 [ext_resource type="FontFile" uid="uid://cvs6epgv234aq" path="res://Super Bouncer.ttf" id="2_kyn48"]
 [ext_resource type="Texture2D" uid="uid://5v28d4lxmga8" path="res://enfeito.jpg" id="3_oi7g3"]
+[ext_resource type="AudioStream" uid="uid://bft47wf7ylcin" path="res://New Look (Wii U Mii Maker Lofi Mix) - Secret Potion.mp3" id="5_pt1ru"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_pt1ru"]
 atlas = ExtResource("2_4rbkc")
@@ -782,6 +783,10 @@ position = Vector2(105, 109)
 rotation = -0.123918
 scale = Vector2(0.05, 0.052)
 texture = ExtResource("3_oi7g3")
+
+[node name="música" type="AudioStreamPlayer2D" parent="." unique_id=1976873908]
+stream = ExtResource("5_pt1ru")
+autoplay = true
 
 [connection signal="pressed" from="Botões/jogar" to="." method="_on_jogar_pressed"]
 [connection signal="pressed" from="Botões/sair" to="." method="_on_sair_pressed"]

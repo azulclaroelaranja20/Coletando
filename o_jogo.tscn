@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://bam4mfe62jaxn" path="res://node_2d.tscn" id="4_q2eyk"]
 [ext_resource type="FontFile" uid="uid://cvs6epgv234aq" path="res://Super Bouncer.ttf" id="5_bo4iu"]
 [ext_resource type="FontFile" uid="uid://cl36wxrhbpkc4" path="res://Super Kidboys.ttf" id="6_uix7o"]
+[ext_resource type="AudioStream" uid="uid://cenljwk720ir6" path="res://monume-game-636273.mp3" id="7_xdwxj"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k84ej"]
 texture = ExtResource("1_sqbau")
@@ -365,7 +366,7 @@ tile_map_data = PackedByteArray("AAAGAAsAAAAAAAYAAAAHAAsAAAACAAcAAAAIAAsAAAADAAc
 tile_set = SubResource("TileSet_k1p63")
 
 [node name="Player" parent="." unique_id=1893534943 instance=ExtResource("3_2jibk")]
-position = Vector2(39, 39)
+position = Vector2(38, 40)
 scale = Vector2(0.35, 0.35)
 
 [node name="Node2D" parent="." unique_id=164431050 instance=ExtResource("4_q2eyk")]
@@ -458,3 +459,13 @@ layout_mode = 2
 theme_override_fonts/font = ExtResource("6_uix7o")
 theme_override_font_sizes/font_size = 10
 text = "créditos:\"z\""
+
+[node name="c" type="Label" parent="HBoxContainer" unique_id=943037817]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_bo4iu")
+theme_override_font_sizes/font_size = 5
+text = "O personagem está ouvindo música"
+
+[node name="trilha" type="AudioStreamPlayer2D" parent="." unique_id=1768776613]
+stream = ExtResource("7_xdwxj")
+autoplay = true

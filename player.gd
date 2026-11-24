@@ -1,5 +1,6 @@
 extends CharacterBody2D
 
+@onready var posicao_inicial = $Marker2D
 
 const SPEED = 80.0
 var lixos_coletados=0
@@ -39,4 +40,5 @@ func _physics_process(delta: float) -> void:
 			objeto.queue_free()
 		
 		if objeto.is_in_group("morri!"):
-			get_tree().reload_current_scene()
+			position.x = 38
+			position.y = 40
