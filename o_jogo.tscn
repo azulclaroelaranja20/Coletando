@@ -460,11 +460,17 @@ theme_override_fonts/font = ExtResource("6_uix7o")
 theme_override_font_sizes/font_size = 10
 text = "créditos:\"z\""
 
+[node name="reiniciar" type="Label" parent="HBoxContainer" unique_id=1523107271]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_uix7o")
+theme_override_font_sizes/font_size = 10
+text = "reiniciar: \"w\""
+
 [node name="c" type="Label" parent="HBoxContainer" unique_id=943037817]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("5_bo4iu")
 theme_override_font_sizes/font_size = 5
-text = "O personagem está ouvindo música"
+text = "(O personagem está ouvindo música)"
 
 [node name="trilha" type="AudioStreamPlayer2D" parent="." unique_id=1768776613]
 stream = ExtResource("7_xdwxj")
