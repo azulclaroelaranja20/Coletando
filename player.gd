@@ -30,7 +30,12 @@ func _physics_process(delta: float) -> void:
 		
 		if objeto.is_in_group("lixos"):
 			lixos_coletados += 1
-			print(lixos_coletados)
+			print("Lixos coletados pelo player: ", lixos_coletados)
+			# Avisa a cena principal para atualizar o texto do HUD
+			var cena_principal = get_tree().current_scene
+			if cena_principal.has_method("registrar_lixo_coletado"):
+				cena_principal.registrar_lixo_coletado()
+			
 			objeto.queue_free()
 		
 		if objeto.is_in_group("morri!"):

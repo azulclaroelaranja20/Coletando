@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://bncm1kxoxm1c5"]
+[gd_scene format=3 uid="uid://c1isf45k6tuuf"]
 
 [ext_resource type="Texture2D" uid="uid://cj08a01vkflap" path="res://material para o meu jogo.webp" id="1_f50pn"]
 
@@ -73,7 +73,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_44cfe")
 }],
-"loop": true,
+"loop": 1,
 "name": &"andar para a direita",
 "speed": 5.0
 }, {
@@ -87,7 +87,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_4sjlk")
 }],
-"loop": true,
+"loop": 1,
 "name": &"andar para esquerda",
 "speed": 5.0
 }, {
@@ -101,7 +101,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_1kp85")
 }],
-"loop": true,
+"loop": 1,
 "name": &"andar para frente",
 "speed": 5.0
 }, {
@@ -115,7 +115,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_k85er")
 }],
-"loop": true,
+"loop": 1,
 "name": &"andar para trás",
 "speed": 5.0
 }]
@@ -124,12 +124,12 @@ animations = [{
 radius = 35.0
 height = 148.0
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1700564923]
 script = SubResource("GDScript_f50pn")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=592355014]
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=71315731]
 position = Vector2(0.00012207, 3.05176e-05)
 scale = Vector2(0.763793, 0.688559)
 sprite_frames = SubResource("SpriteFrames_kh22e")
@@ -137,7 +137,7 @@ animation = &"andar para a direita"
 autoplay = "andar para esquerda"
 frame_progress = 0.871559
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1920701279]
 shape = SubResource("CapsuleShape2D_geh84")
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1568533643]

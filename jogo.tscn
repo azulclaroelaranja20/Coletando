@@ -1,10 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://dnghrwh0o8pa0"]
+[gd_scene format=3 uid="uid://x07aerwgckbj"]
 
 [ext_resource type="PackedScene" uid="uid://bncm1kxoxm1c5" path="res://character_body_2d.tscn" id="1_kxg5b"]
 
-[node name="jogo" type="Node2D"]
+[node name="jogo" type="Node2D" unique_id=908688200]
 
-[node name="TileMapLayer" type="TileMapLayer" parent="."]
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=317702808]
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("1_kxg5b")]
+[node name="CharacterBody2D" parent="." unique_id=311900178 instance=ExtResource("1_kxg5b")]
 position = Vector2(-2, 4)
